@@ -1,0 +1,19 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 14
+----------
+
+#include <stdio.h>
+
+int main(void) {
+  int i,j = 0, div[21];
+
+  for (i=1000; i<=1999; i++){
+    if (i%11 == 5 && j<20){
+      j++;
+      div[j] = i;
+      printf("%d\n", div[j]);
+    }
+  }  
+  return 0;
+}

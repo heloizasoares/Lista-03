@@ -1,0 +1,20 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 09
+----------
+
+#include <stdio.h>
+
+int main(void) {
+  int i, soma = 0, contador = 0;
+
+  for(i=13; i < 73;i++){
+    if(i%2 == 0){
+      soma = soma + i;
+      contador++;
+    }
+  }
+  printf("Media dos numeros pares: %d", soma/contador);
+
+return 0;
+}

@@ -1,0 +1,21 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 04
+----------
+
+#include <stdio.h>
+
+int main(){
+  int num, i, resto = 0;
+
+  printf("Digite o numero: ");
+  scanf("%d", &num);
+
+  for (i=1; i<=num; i++) {    
+      resto = num%i;
+      if(resto == 0){
+        printf("%d, ", i);
+      }
+  }
+  return 0;
+}

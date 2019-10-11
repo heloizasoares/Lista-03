@@ -1,0 +1,63 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 22
+----------
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void funcao (){
+  int i, j;
+  int tam = 0, m = 0, a = 0;
+
+  printf("Digite o tamanho do array: ");
+  scanf("%d", &tam);
+
+  int A[tam+1];
+
+  printf("Preencha seu array\n");
+
+  for (i=1; i<=tam; i++){
+    scanf ("%d", &A[i]);
+  }
+  for(i=1; i<=tam; i++){
+    if(A[i] > m){
+      m = A[i];
+    }
+  }
+  printf("O seu conjunto é: {");
+
+  for (i=1; i<=tam; i++){
+    if (i == tam){
+      printf ("%d", A[i]);
+    } 
+    else{
+      printf ("%d, ", A[i]);
+    }
+  }
+  printf ("} \n");
+  a = 1;
+
+  while (a == 1){  
+    i = 1;  
+    while(i <= tam){
+      if (A[i] >= m){
+        printf ("*");
+      } 
+      else{
+          printf(" ");
+      }
+      i++;      
+  }
+    printf ("\n");
+    m = m-1;
+    if (m == 0){
+      a = 0;
+    }
+  }
+}
+
+int main(void) {
+  funcao();
+  return 0;
+}

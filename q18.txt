@@ -1,0 +1,22 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 18
+----------
+
+#include <stdio.h>
+
+float celsius(float f){
+  float c= 0;
+  c = (f-32)/1.8;
+  return c;
+}
+
+int main(void){
+  float temp;
+
+  printf("Digite uma temperatura em fahrenheit: ");
+  scanf ("%f", &temp);
+  
+  printf("%.1f°F = %.1f°C", temp, celsius(temp));
+  return 0;
+}

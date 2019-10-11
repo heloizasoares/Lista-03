@@ -1,0 +1,19 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 05
+----------
+
+#include <stdio.h>
+
+int main(void) {
+  int i, num, fatorial = 1;
+
+  printf("Digite um numero");
+  scanf("%d", &num);
+
+  for(i = num; i > 0; i--){
+    fatorial = fatorial * i;
+  }
+  printf("%d", fatorial);
+  return 0;
+}

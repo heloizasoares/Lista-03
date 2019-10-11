@@ -1,0 +1,26 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 24
+----------
+
+#include <stdio.h>
+#include <string.h>
+
+void funcao(){
+  int x, tam = 0;
+
+  char texto[100];
+
+  fgets(texto, 100, stdin);
+  tam = strlen(texto);
+  
+  for (x=tam-1; x>=0; x--){
+  printf("%c",texto[x]);
+  }
+}
+
+int main(void) {
+  funcao();  
+
+  return 0;
+}

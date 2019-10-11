@@ -1,0 +1,14 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 07
+----------
+
+#include <stdio.h>
+
+int main(void) {
+  int i;
+  for(i = 1;i <=10;i++){
+    printf("4 x %d = %d\n",i, 4*i);
+  }
+  return 0;
+}

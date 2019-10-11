@@ -1,0 +1,21 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 17
+----------
+
+#include <stdio.h>
+
+float fahrenheit(float c){
+  float f = 0;
+  f = (1.8*c)+32;
+  return f;
+}
+
+int main(void){
+  float temp;
+  printf("Digite uma temperatura em Celsius: ");
+  scanf ("%f", &temp);
+  printf("%.1f° C = %.1f° F", temp, fahrenheit(temp));
+
+  return 0;
+}

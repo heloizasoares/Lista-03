@@ -1,0 +1,32 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 23
+----------
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+ 
+int main(void){
+  char texto[100];
+  int i, contador = 1, contador2 = 0;
+    
+  puts ("Digite uma frase, amado: ");
+  fgets(texto, 200, stdin);
+
+  for(i=0; texto[i] != '\0'; i++){
+    if ((texto[i] >= 'a' && texto[i] <= 'z') || (texto[i] >= 'A' && texto[i] <= 'Z' )){
+    contador2++;
+    }
+  }
+
+  for(i=0; texto[i] != '\0'; i++){
+    if (texto[i] == ' '){
+    contador++;
+    }
+  }
+  
+  printf("%d caracteres, %d palavras", contador2, contador);
+  
+  return 0;
+}

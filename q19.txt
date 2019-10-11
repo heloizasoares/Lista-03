@@ -1,0 +1,27 @@
+Heloiza Soares dos Santos Cardoso
+
+Questão 19
+----------
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int intervalo (int a, int b){
+  int numAleat = 0;
+  srand(time(0));
+  numAleat = (rand()%(b - a) + a);  
+  return numAleat;
+}
+
+int main(void){
+
+int A, B;
+printf("Digite os dois numeros do intervalo: \n");
+scanf ("%d", &A); scanf ("%d", &B);
+
+printf ("Numero aleatorio do intervalo: [%d, %d] \n", A, B);
+printf ("Numero aleatorio: %d", intervalo (A, B));
+
+return 0;
+}
